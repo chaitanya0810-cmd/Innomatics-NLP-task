@@ -1,0 +1,25 @@
+Task 1: Conceptual Understanding
+
+1. Difference between "Love" and "love" in NLP
+"Love" (capitalized) and "love" (lowercase) are treated as different tokens in NLP.
+This increases vocabulary size unnecessarily.
+That’s why we usually convert text to lowercase during preprocessing.
+
+2. What happens if stopwords are not removed?
+Adds noise to the data (common words like "is", "the")
+Increases processing time
+Reduces model accuracy in some tasks (like classification)
+
+3. Two scenarios where removing stopwords is harmful
+Sentiment Analysis:
+Example: "I am not happy" → removing "not" changes meaning
+Search Queries / QA Systems:
+Example: "What is AI?" → removing "what" loses intent
+
+4. Difference between stemming and lemmatization
+Stemming:
+Cuts words to root form (may be incorrect)
+Example: "running" → "runn"
+Lemmatization:
+Converts to proper base word using vocabulary
+Example: "running" → "run"
